@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===== CSS BOOSTRAP===== -->
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
 
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="style.css">
@@ -12,46 +14,142 @@
     <!-- ===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>Responsive Navigation Menu Bar</title>
+
+    <title>Dru Your Live</title>
 </head>
 <body>
-    <nav>
-        <div class="nav-bar">
-            <i class='bx bx-menu sidebarOpen' ></i>
-            <span class="logo navLogo"><a href="#">Dru</a></span>
-
-            <div class="menu">
-                <div class="logo-toggle">
-                    <span class="logo"><a href="#">Chill</a></span>
-                    <i class='bx bx-x siderbarClose'></i>
+    <!-- navegacion -->
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <i class='bx bx-menu sidebarOpen' ></i>
+                <span class="logo navLogo"><a href="#">Dru</a></span>
+    
+                <div class="menu">
+                    <div class="logo-toggle">
+                        <span class="logo"><a href="#">Chill</a></span>
+                        <i class='bx bx-x siderbarClose'></i>
+                    </div>
+    
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Faq</a></li>
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </div>
+    
+                <div class="darkLight-searchBox">
+                    <!-- <div class="dark-light">
+                        <i class='bx bx-moon moon'></i>
+                        <i class='bx bx-sun sun'></i>
+                    </div> -->
+    
+                    <div class="searchBox">
+                        <div class="searchToggle">
+                            <i class='bx bxs-user'> <span>0</span></i>
+                        </div>
 
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Faq</a></li>
-                    <li><a href="#">Donate</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="darkLight-searchBox">
-                <div class="dark-light">
-                    <i class='bx bx-moon moon'></i>
-                    <i class='bx bx-sun sun'></i>
-                </div>
-
-                <div class="searchBox">
-                    <div class="search-field">
-                        <input type="text" placeholder="Search...">
-                        <i class='bx bx-search'></i>
+                        <div class="search-field">
+                            <input type="text" placeholder="Search...">
+                            <i class='bx bx-search'></i>
+                        </div>
                     </div>
                 </div>
             </div>
+        </nav>
+    </header>
+
+    <!-- content principal -->
+    <main>
+        <section class="container text-white text-center mt-5">
+            <h1 class="text-capitalize">El futuro es hoy <br> viejo</h1>
+            <p class="m-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et omnis atque vero. <br> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae est eveniet dolore!
+            </p>
+        </section>
+
+        <section class="container p-3">
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="static/img/tecnoAnime.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="static/img/tecnoAnime.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a short card.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="static/img/tecnoAnime.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- segunda fila -->
+        
+        <section class="container p-3">
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="static/img/tecnoAnime.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="static/img/tecnoAnime.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a short card.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="static/img/tecnoAnime.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <span class="linea-f" ></span>
         </div>
-    </nav>
+        <div class="container py-4">
+            <p>© Dru, AARR</p>
+            <P>2023</P>
+        </div>
+    </footer>
 
+    <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
-
 </body>
 </html>
