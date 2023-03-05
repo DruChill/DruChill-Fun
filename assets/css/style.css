@@ -105,26 +105,34 @@ nav .nav-bar .logo a{
     font-weight: 400;
     color: var(--text-color);
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
 }
 
-.nav-links li a::before{
-    content: '';
+.nav-links li a:after {
+    content: "";
     position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
-    background-color: var(--text-color);
-    opacity: 0;
-    transition: all 0.3s ease;
+    width: 0%;
+    height: 2px;
+    background: #ff4a04;
+    bottom: 0px;
+    left: 0;
+    transition: all .5s;
 }
 
-.nav-links li:hover a::before{
-    opacity: 1;
+.nav-links  a:hover:after {
+    width: 100%;
 }
+.nav-links  .active:after{
+    width: 100%;
+}
+.nav-links a:hover,
+.nav-links .active {
+    color:#ff4a04;   
+}
+
+/* .nav-links li:hover a::before{
+    opacity: 1;
+} */
 
 .nav-bar .darkLight-searchBox{
     display: flex;
@@ -289,7 +297,7 @@ h1 {
 }
 
 footer {
-    color: #fff;
+    color: #CCC;
 }
 
 footer .container {
@@ -299,7 +307,16 @@ footer .container {
 }
 
 .social-media {
-    font-size: 20px;
+    font-size: 23px;
+}
+
+.social-media a {
+    color: #CCC;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #ff4a04;
 }
 
 
