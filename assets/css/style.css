@@ -261,6 +261,11 @@ body.dark .search-field i{
 }
 
 /*Mis cambios*/
+
+.searchToggle {
+    align-items: center;
+}
+
 h1 {
     font-weight: bold;
     font-size: 4.2rem;
